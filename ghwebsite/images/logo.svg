@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe9a3"/>
+      <stop offset="35%" stop-color="#f7c948"/>
+      <stop offset="70%" stop-color="#e0a217"/>
+      <stop offset="100%" stop-color="#a86e08"/>
+    </linearGradient>
+    <linearGradient id="goldBand" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#fff3bf"/>
+      <stop offset="55%" stop-color="#f5c33b"/>
+      <stop offset="100%" stop-color="#c88a10"/>
+    </linearGradient>
+    <linearGradient id="navy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c3b60"/>
+      <stop offset="100%" stop-color="#121a2e"/>
+    </linearGradient>
+    <linearGradient id="glint" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="70%" stop-color="#ffe9a3" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffd75e" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path d="M32 6 L9 57 L18 57 L32 28 Z" fill="url(#navy)"/>
+  <path d="M32 6 L55 57 L46 57 L32 28 Z" fill="url(#gold)"/>
+  <path d="M32 6 L35 17 L32 28 L29 17 Z" fill="#ffffff" opacity="0.16"/>
+  <path d="M13 39 Q32 30 51 39 L51 47 Q32 38 13 47 Z" fill="url(#goldBand)"/>
+  <path d="M32 7 L29.5 28 L32 32 L34.5 28 Z" fill="url(#glint)"/>
+</svg>

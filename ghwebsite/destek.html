@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Destek — Anch Launcher</title>
+<meta name="description" content="Anch Launcher destek formu. Sorununuzu seçin, açıklamanızı yazın ve yanıt için e-posta adresinizi belirtin.">
+<meta name="theme-color" content="#05070f">
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/svg+xml" href="images/logo.svg">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="aurora" aria-hidden="true">
+  <div class="aurora-blob a1"></div>
+  <div class="aurora-blob a2"></div>
+  <div class="aurora-blob a3"></div>
+</div>
+<div class="noise" aria-hidden="true"></div>
+
+<header class="glass-nav" id="nav">
+  <nav class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="30" height="30">
+      <span>Anch Launcher</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#ozellikler">Özellikler</a>
+      <a href="index.html#sss">SSS</a>
+      <a href="index.html#indir">İndir</a>
+      <a href="destek.html" class="active">Destek</a>
+    </div>
+    <div class="nav-actions">
+      <a class="btn btn-sm btn-ghost" href="index.html">Ana Sayfa</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menü" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#ozellikler">Özellikler</a>
+  <a href="index.html#sss">SSS</a>
+  <a href="index.html#indir">İndir</a>
+  <a href="destek.html">Destek</a>
+</div>
+
+<main>
+  <section class="hero" style="padding-bottom: 24px;">
+    <div class="hero-badge glass-pill reveal">
+      <span class="pulse"></span> Destek Merkezi
+    </div>
+    <h1 class="reveal d1" style="font-size: clamp(2rem, 5vw, 3rem);">Nasıl yardımcı olabiliriz?</h1>
+    <p class="hero-sub reveal d2">
+      Karşılaştığınız sorunu seçin, açıklamanızı yazın ve yanıt alabilmek için
+      e-posta adresinizi belirtin. Talebiniz doğrudan destek ekibine iletilir.
+    </p>
+  </section>
+
+  <section class="section" style="padding-top: 12px;">
+    <div class="form-wrap">
+      <form class="glass-card form-card reveal" id="supportForm" novalidate>
+        <div class="form-group">
+          <label for="issueType">Sorun Kategorisi</label>
+          <select class="form-control" id="issueType" name="issueType" required>
+            <option value="" disabled selected>Seçiniz…</option>
+            <option value="Kurulum sorunu">Kurulum sorunu</option>
+            <option value="Microsoft girişi başarısız">Microsoft girişi başarısız</option>
+            <option value="Oyun açılmıyor / çöküyor">Oyun açılmıyor / çöküyor</option>
+            <option value="Düşük FPS / performans">Düşük FPS / performans</option>
+            <option value="Mod yüklenmiyor">Mod yüklenmiyor</option>
+            <option value="Güncelleme hatası">Güncelleme hatası</option>
+            <option value="Arayüz / tema sorunu">Arayüz / tema sorunu</option>
+            <option value="Antivirüs uyarısı">Antivirüs uyarısı</option>
+            <option value="Diğer">Diğer</option>
+          </select>
+        </div>
+
+        <div class="form-group" id="otherIssueGroup" style="display:none;">
+          <label for="otherIssue">Sorun Başlığı <span class="hint">(Diğer seçildiğinde)</span></label>
+          <input class="form-control" type="text" id="otherIssue" name="otherIssue" placeholder="Kısaca sorununuzu yazın" maxlength="120">
+        </div>
+
+        <div class="form-group">
+          <label for="description">Açıklama</label>
+          <textarea class="form-control" id="description" name="description" required
+            placeholder="Sorunu adım adım açıklayın. Hata mesajı varsa yazın. Ne yapmayı denediniz?"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="userEmail">E-posta Adresiniz <span class="hint">(yanıt için zorunlu)</span></label>
+          <input class="form-control" type="email" id="userEmail" name="userEmail" required
+            placeholder="ornek@eposta.com" autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="appVersion">Launcher Sürümü <span class="hint">(opsiyonel)</span></label>
+          <input class="form-control" type="text" id="appVersion" name="appVersion" placeholder="Örn: v2.5.0" maxlength="20">
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitBtn">
+          Gönder
+        </button>
+
+        <div class="form-error" id="formError"></div>
+        <div class="form-success" id="formSuccess">
+          Talebiniz hazır. E-posta programınız açıldıysanız gönder tuşuna basmanız yeterli.
+          Yanıt belirttiğiniz adrese yapılacaktır.
+        </div>
+      </form>
+
+      <p class="note reveal" style="margin-top: 20px;">
+        Form, cihazınızdaki varsayılan e-posta programını açar. E-posta programı yoksa
+        <a href="mailto:support@anchproducts.com" style="color: var(--violet);">support@anchproducts.com</a>
+        adresine manuel olarak yazabilirsiniz.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <img src="images/logo.svg" alt="" width="24" height="24">
+      <span>Anch Launcher</span>
+    </div>
+    <p>Windows 10/11 için profesyonel Minecraft istemcisi.</p>
+    <div class="foot-links">
+      <a href="index.html">Ana Sayfa</a>
+      <a href="index.html#indir">İndir</a>
+      <a href="index.html#sss">SSS</a>
+    </div>
+    <p class="copy">© 2026 Anch Products · Tüm hakları saklıdır</p>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script src="destek.js"></script>
+</body>
+</html>
