@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>404 — Anch Launcher</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#05070f">
+<link rel="icon" type="image/svg+xml" href="images/logo.svg">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .err-wrap {
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; padding: 24px;
+  }
+  .err-inner { max-width: 440px; }
+  .err-code {
+    font-size: clamp(5rem, 15vw, 8rem);
+    font-weight: 800; letter-spacing: -3px; line-height: 1;
+    background: linear-gradient(135deg, var(--violet), var(--blue));
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    filter: drop-shadow(0 0 40px var(--violet-glow));
+    margin-bottom: 12px;
+  }
+  .err-inner h1 {
+    font-size: 1.6rem; letter-spacing: -0.4px; margin-bottom: 10px;
+  }
+  .err-inner p {
+    color: var(--muted); margin-bottom: 28px;
+  }
+  .err-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+</style>
+</head>
+<body>
+<div class="aurora" aria-hidden="true">
+  <div class="aurora-blob a1"></div>
+  <div class="aurora-blob a2"></div>
+  <div class="aurora-blob a3"></div>
+</div>
+<div class="noise" aria-hidden="true"></div>
+
+<header class="glass-nav">
+  <nav class="nav-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="30" height="30">
+      <span>Anch Launcher</span>
+    </a>
+  </nav>
+</header>
+
+<main>
+  <div class="err-wrap">
+    <div class="err-inner">
+      <div class="err-code">404</div>
+      <h1>Sayfa bulunamadı</h1>
+      <p>Aradığın sayfa taşınmış, silinmiş veya hiç var olmamış olabilir. Ana sayfaya dönüp tekrar deneyebilirsin.</p>
+      <div class="err-actions">
+        <a class="btn btn-primary" href="index.html">Ana Sayfa</a>
+        <a class="btn btn-ghost" href="index.html#indir">İndir</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-inner">
+    <div class="foot-brand">
+      <img src="images/logo.svg" alt="" width="22" height="22">
+      <span>Anch Launcher</span>
+    </div>
+    <p class="copy">© 2026 Anch Products · v2.5.0</p>
+  </div>
+</footer>
+</body>
+</html>
