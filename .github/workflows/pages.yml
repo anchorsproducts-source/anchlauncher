@@ -1,9 +1,11 @@
-name: Deploy ghwebsite to GitHub Pages
+﻿name: Deploy ghwebsite to GitHub Pages
 
 on:
   push:
     branches: [main]
-    paths: ["ghwebsite/**", ".github/workflows/pages.yml"]
+    paths:
+      - 'ghwebsite/**'
+      - '.github/workflows/pages.yml'
   workflow_dispatch:
 
 permissions:
