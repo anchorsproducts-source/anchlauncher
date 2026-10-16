@@ -3,7 +3,7 @@ name: Deploy ghwebsite to GitHub Pages
 on:
   push:
     branches: [main]
-    paths: ["ghwebsite/**"]
+    paths: ["ghwebsite/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 
 permissions:
